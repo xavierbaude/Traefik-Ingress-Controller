@@ -30,3 +30,12 @@ Prometheus export is also enable for metrics.
 Finally accesslog are enabled, you can get it from the stdout of the traefik pod.
 
 Enjoy.
+
+## Next step
+
+You should now redirect traffik to your ingress, so simply create a dns wildcard entry which point to the IP of the Loadbalancer.
+
+ex:
+```bash
+*.foo.bar -> 1.1.1.1
+```
