@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ingressroutetls
+spec:
+  entryPoints:
+    - websecure
+  routes:
+  - match: Host(`something.foo.bar`)
+    kind: Rule
+    services:
+    - name: <service_name>
+      port: 80
+  tls:
+    certResolver: sample
