@@ -12,7 +12,7 @@ To deploy Traefik here is an all-in-one command
 
 ```bash
 kubectl create ns traefik
-curl https://raw.githubusercontent.com/xavierbaude/Traefic-Ingress-Controller/master/files/traefik-ig.yaml | kubectl apply -f -n traefik
+curl https://raw.githubusercontent.com/xavierbaude/Traefic-Ingress-Controller/master/files/traefik-ig.yaml | kubectl apply -f - -n traefik
 ```
 
 ## Usage
