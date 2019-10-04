@@ -17,8 +17,10 @@ curl https://raw.githubusercontent.com/xavierbaude/Traefic-Ingress-Controller/ma
 
 ## Usage
 
-This setup enable both Ingress & IngressRoute object. Main advantage of IngressRoute is the certificate Management. 
+This setup enable both Ingress & IngressRoute object. Main advantage of IngressRoute is the certificate Management.
 You can find some examples in the directory "examples".
+
+You can access to traefik dasboard with a private loadbalancer.
 
 With this deploiement, the tlsChallenge is enabled and the name of the certResolver is "sample".
 Get more information here: <https://docs.traefik.io/https/acme/>
