@@ -2,7 +2,7 @@
 
 ## Main Goal
 
-This repository is intead to help deploying Traefik <https://traefik.io/> as an Ingress Controller for Kubernetes.
+This repository is intead to help deploying Traefik 2 <https://traefik.io/> as an Ingress Controller for Kubernetes.
 
 See more on what is an Ingress controller following this link <https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/>
 
@@ -12,7 +12,7 @@ To deploy Traefik here is an all-in-one command
 
 ```bash
 kubectl create ns traefik
-curl https://raw.githubusercontent.com/xavierbaude/Traefic-Ingress-Controller/master/files/traefik-ig.yaml | kubectl apply -f - -n traefik
+curl https://raw.githubusercontent.com/xavierbaude/Traefik-Ingress-Controller/master/files/traefik-ig.yaml | kubectl apply -f - -n traefik
 ```
 
 ## Usage
