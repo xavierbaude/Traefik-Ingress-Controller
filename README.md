@@ -8,12 +8,20 @@ See more on what is an Ingress controller following this link <https://kubernete
 
 ## Installation
 
-To deploy Traefik here is an all-in-one command
+To deploy Traefik here is an all-in-one command (dev mode)
 
 ```bash
 kubectl create ns traefik
 curl https://raw.githubusercontent.com/xavierbaude/Traefik-Ingress-Controller/master/files/traefik-ig.yaml | kubectl apply -f - -n traefik
 ```
+
+For production usage, you have to store TLS certificate to an external place such a PVC
+
+```bash
+kubectl create ns traefik
+curl https://raw.githubusercontent.com/xavierbaude/Traefik-Ingress-Controller/master/files/traefik-ig-pvc.yaml | kubectl apply -f - -n traefik
+```
+
 
 ## Usage
 
