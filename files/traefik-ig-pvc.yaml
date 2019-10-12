@@ -201,7 +201,7 @@ spec:
             - --providers.kubernetesingress=true
             - --providers.kubernetescrd
             - --certificatesResolvers.sample.acme.tlsChallenge=true
-            - --certificatesResolvers.sample.acme.email=example@example.com
+            - --certificatesResolvers.sample.acme.email=noreply@gmail.com
             - --certificatesResolvers.sample.acme.storage=/tls/acme.json
             # ca de dev
             #- --certificatesresolvers.default.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory

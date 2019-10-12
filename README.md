@@ -22,7 +22,6 @@ kubectl create ns traefik
 curl https://raw.githubusercontent.com/xavierbaude/Traefik-Ingress-Controller/master/files/traefik-ig-pvc.yaml | kubectl apply -f - -n traefik
 ```
 
-Note : to make TLS working, change the default email, if not you will get "Unable to obtain ACME certificate" error message...
 
 ## Usage
 
