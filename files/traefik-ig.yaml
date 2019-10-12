@@ -196,13 +196,14 @@ spec:
             - --accesslog
             - --metrics.prometheus=true
             - --metrics=true
-            - --entrypoints.web.Address=:8000
-            - --entrypoints.websecure.Address=:4443
+            - --entrypoints.web.Address=:80
+            - --entrypoints.websecure.Address=:443
             - --providers.kubernetesingress=true
             - --providers.kubernetescrd
             - --certificatesResolvers.sample.acme.tlsChallenge=true
-            - --certificatesResolvers.sample.acme.email=example@example.com
+            - --certificatesResolvers.sample.acme.email=example@changeit.com
             - --certificatesResolvers.sample.acme.storage=acme.json
+            - --certificatesResolvers.sample.acme.dnsChallenge.delayBeforeCheck=30
             # ca de dev
             #- --certificatesresolvers.default.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory
           ports:
