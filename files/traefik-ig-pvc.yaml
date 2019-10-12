@@ -212,9 +212,9 @@ spec:
               containerPort: 443
             - name: admin
               containerPort: 8080
-        volumeMounts:
-        - mountPath: /tls
-          name: tls-volume
+          volumeMounts:
+          - mountPath: /tls
+            name: tls-volume
       volumes:
       - name: tls-volume
         persistentVolumeClaim:
